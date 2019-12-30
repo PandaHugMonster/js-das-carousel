@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo Experiment</title>
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="das-carousel-dev.js"></script>
+        <script type="text/javascript">
+            DasCarousel.attach('.bbee, .ddee, .vvee', {
+                carousel_width: 300,
+                carousel_height: 300,
+            });
+            DasCarousel.attach('.das-carousel', {
+                direction: 'backward'
+            });
+        </script>
+    </head>
+    <body style="display: flex; flex-flow: row wrap">
+        <div style="width: 100%">
+            <button onclick="DasCarousel.stop_all();">Stop All</button>
+            <button onclick="DasCarousel.start_all();">Start All</button>
+        </div>
+        <div class="bbee das-carousel" data-das-interval="2000">
+            <div class="das-slide" id="slide-1">
+                <div class="inner-block">Slide 1</div>
+            </div>
+            <div class="das-slide" id="slide-2">
+                <div class="inner-block">Slide 2</div>
+            </div>
+            <div class="das-slide" id="slide-3">
+                <div class="inner-block">Slide 3</div>
+            </div>
+            <div class="das-slide" id="slide-4">
+                <div class="inner-block">Slide 4</div>
+            </div>
+            <div class="das-slide" id="slide-5">
+                <div class="inner-block">Slide 5</div>
+            </div>
+        </div>
+
+        <div class="ddee das-carousel" data-das-interval="3000">
+            <div class="das-slide" id="slide-6">
+                <div class="inner-block">Slide 6</div>
+            </div>
+            <div class="das-slide" id="slide-7">
+                <div class="inner-block">Slide 7</div>
+            </div>
+            <div class="das-slide" id="slide-8">
+                <div class="inner-block">Slide 8</div>
+            </div>
+            <div class="das-slide" id="slide-9">
+                <div class="inner-block">Slide 9</div>
+            </div>
+            <div class="das-slide" id="slide-A">
+                <div class="inner-block">Slide A</div>
+            </div>
+        </div>
+
+        <div class="vvee das-carousel" data-das-interval="5000">
+            <div class="das-slide" id="slide-B">
+                <div class="new-block">
+                    <div>Test 1</div>
+
+                    <div class="das-carousel" style="width: 100px; height: 100px;" data-das-interval="3000">
+                        <div class="das-slide slide-internal" id="slide-I">
+                            <div class="too-block">
+                                <div>Test 3</div>
+                                <div>Test 3!</div>
+                            </div>
+                        </div>
+                        <div class="das-slide slide-internal" id="slide-J">
+                            <div class="too-block">
+                                <div>Test 4</div>
+                                <div>Test 5!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="das-slide" id="slide-C">
+                <div class="new-block">
+                    <div class="das-carousel" style="width: 100px; height: 100px;" data-das-interval="3000">
+                        <div class="das-slide slide-internal-2" id="slide-Z">
+                            <div class="goo-block">
+                                <div>Test 8</div>
+                                <div>Test 8!</div>
+                            </div>
+                        </div>
+                        <div class="das-slide slide-internal-2" id="slide-Y">
+                            <div class="goo-block">
+                                <div class="das-carousel" style="width: 30px; height: 30px; flex-direction: column" data-das-interval="1000">
+                                    <div class="das-slide slide-internal-3" id="slide-P">
+                                        <div class="boo-block">
+                                            <div>1 T</div>
+                                        </div>
+                                    </div>
+                                    <div class="das-slide slide-internal-3" id="slide-Q">
+                                        <div class="boo-block">
+                                            <div>3 T</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>Test 7!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>Test 2!</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
